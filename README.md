@@ -6,7 +6,8 @@
 >ffmpeg -i input.mp4 -vf drawtext=fontsize=40:x=(w-text_w)/2:y=(h-text_h)/2:fontfile='C\:\\Windows\\Fonts\\Arial.ttf':text='alikaptan':box=1 -y out.mp4
 
 #### Yazının konumu
->Top left: x=0:y=0 (with 10 pixel padding x=10:y=10)
+
+Top left: x=0:y=0 (with 10 pixel padding x=10:y=10)
 Top center: x=(w-text_w)/2:y=0 (with 10 px padding x=(w-text_w)/2:y=10)
 Top right: x=w-tw:y=0 (with 10 px padding: x=w-tw-10:y=10)
 Centered: x=(w-text_w)/2:y=(h-text_h)/2

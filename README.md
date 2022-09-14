@@ -13,7 +13,10 @@
 >Bottom left: x=0:y=h-th (with 10 px padding: x=10:y=h-th-10)  
 >Bottom center: x=(w-text_w)/2:y=h-th (with 10 px padding: x=(w-text_w)/2:y=h-th-10)  
 >Bottom right: x=w-tw:y=h-th (with 10 px padding: x=w-tw-10:y=h-th-10)
+>ffmpeg -i input.mp4 -vf "drawtext=text='Github Alikaptan':x=(w-text_w)/2:y=(h-text_h)/2:fontsize=24:fontcolor=white" -c:a copy output.mp4
+
 
 #### Beklemeden fontu yazıyı gör
 >ffplay -vf "drawtext=fontfile=/path/to/font.ttf:text='Stack Overflow':fontcolor=white:fontsize=24:box=1:boxcolor=black@0.5:boxborderw=5:x=(w-text_w)/2:y=(h-text_h)/2" input.mp4
+
 

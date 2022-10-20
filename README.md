@@ -31,4 +31,7 @@
 #### Yazı rengi 
 >ffmpeg -i input.mp4 -vf "drawtext=fontfile=font.ttf:fontsize=80:fontcolor=yellow@0.5:text='alikaptan': x=if(eq(mod(t\,30)\,0)\,rand(0\,(W-tw))\,x): y=if(eq(mod(t\,30)\,0)\,rand(0\,(H-th))\,y)" -c:v libx264 -crf 23 -c:a copy output.mp4
 
+### videoyu ters oynatma
+>ffmpeg -i input.mp4 -vf reverse output.mp4
+
 
